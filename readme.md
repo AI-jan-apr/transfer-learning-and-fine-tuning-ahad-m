@@ -124,6 +124,18 @@ Gradual Unfreezing outperformed all other strategies because it combines the ben
  
 ---
  
+## Note: Per-Class Metrics
+ 
+Precision, Recall, and F1-Score should ideally be reported per class to identify weak categories. The code is included in the notebook but results could not be generated the Colab runtime disconnected after training, and the model artifacts on MLflow were incomplete, preventing reload without full retraining.
+ 
+---
+ 
+## EfficientNetB1 Comparison
+ 
+A separate notebook (`EfficientNetB1.ipynb`) is included with the same experiments using EfficientNetB1 (240×240 input, 6.5M params). B1 outperformed B0 across all strategies, with the best result being Gradual Unfreezing at **95.16%** (vs 94.23% for B0). Full comparison and analysis are inside the notebook.
+ 
+---
+ 
 ## Experiment Tracking
  
 - **DAGsHub**: Repository at `ahad-m/my-first-repo` dataset uploaded 
