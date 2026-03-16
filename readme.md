@@ -126,7 +126,7 @@ Gradual Unfreezing outperformed all other strategies because it combines the ben
  
 ## Bonus: Experiment Tracking
  
-- **DAGsHub**: Repository at `ahad-m/my-first-repo` dataset uploaded and managed via DVC
+- **DAGsHub**: Repository at `ahad-m/my-first-repo` dataset uploaded 
 - **MLflow**: All 4 runs tracked with:
   - Parameters: model name, strategy, LR, epochs, batch size, dropout, etc.
   - Metrics: train/val loss and accuracy per epoch, test loss and accuracy
