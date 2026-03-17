@@ -107,12 +107,16 @@ All three notebooks (B0, B1, B2) include full `classification_report` for every 
 ---
 
 ## EfficientNet Model Comparisons
+All three notebooks use the exact same code, strategies, and hyperparameters the only difference is the model backbone. EfficientNet scales three things between versions:
 
-Three notebooks included comparing different EfficientNet backbones:
+| | B0 | B1 | B2 |
+|--|:--:|:--:|:--:|
+| Image size | 224×224 | 240×240 | 260×260 |
+| Parameters | 4M | 6.5M | 7.8M |
+| Width multiplier | 1.0× | 1.0× | 1.1× |
+| Depth (layers) | 238 | 340 | 340 |
 
-- **`EfficientNetB0.ipynb`** — 224×224 input, 4M params, 4 strategies including Layer-wise LR
-- **`EfficientNetB1.ipynb`** — 240×240 input, 6.5M params, 3 strategies
-- **`EfficientNetB2.ipynb`** — 260×260 input, 7.8M params, 3 strategies
+B1 adds more layers (deeper). B2 keeps the same depth as B1 but widens each layer (more filters). Bigger model = better features but slower training.
 
 | Strategy | B0 | B1 | B2 |
 |----------|:---:|:---:|:---:|
