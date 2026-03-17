@@ -133,4 +133,18 @@ Larger models help most with frozen backbones (FE: B2 beats B0 by +1.80%). With 
   - Artifacts: training curve plots, comparison charts
   - Models: saved with `mlflow.keras.log_model()`
 
+
+
+## MLflow Results Overview
+
+### Test Accuracy — All Experiments
+![Test Accuracy](test_accuracy.png)
+
+Gradual Unfreezing achieved the highest accuracy across all models (B0: 95%, B1: 95%, B2: 95%), while Layer-wise LR Decay was the weakest (88%). Larger models (B1, B2) consistently outperformed B0 in Feature Extraction and Fine-tuning.
+
+### Test Loss — All Experiments
+![Test Loss](test_loss.png)
+
+Gradual Unfreezing B1 achieved the lowest loss (0.19), followed by B0 (0.21) and B2 (0.22). Layer-wise LR had the highest loss (0.39), confirming its optimization instability.
+
 All experiments are versioned and comparable on the [DAGsHub MLflow dashboard](https://dagshub.com/ahad-m/my-first-repo.mlflow).
