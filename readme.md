@@ -147,4 +147,18 @@ A separate notebook (`EfficientNetB1.ipynb`) is included with the same experimen
   - Model Registry: best model (Gradual Unfreezing) registered as `food11-efficientnet-best`
  
 All experiments are versioned and comparable on the [DAGsHub MLflow dashboard](https://dagshub.com/ahad-m/my-first-repo.mlflow).
+
+## Training Curves
+
+### Feature Extraction
+![Feature Extraction](plots/feature_extraction_curves.png)
+
+### Fine-tuning
+![Fine-tuning](plots/fine_tuning_curves.png)
+
+### Gradual Unfreezing
+![Gradual Unfreezing](plots/gradual_unfreezing_curves.png)
+
+### Final Comparison
+![Final Comparison](plots/final_comparison_all.png)
  
